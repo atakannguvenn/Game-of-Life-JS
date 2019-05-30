@@ -19,7 +19,7 @@ let rows;
 let resolution = 10;
 
 function setup() {
-  createCanvas(1500, 730);
+  createCanvas(1520, 840);
   cols = width / resolution;
   rows = height / resolution;
 
@@ -66,10 +66,15 @@ function draw() {
     }
   }
   grid = next;
+  sleep(200);
 
 
 };
 
+function sleep(delay) {
+  var start = new Date().getTime();
+  while (new Date().getTime() < start + delay);
+}
 
 function countNeighbors(grid, x, y) {
   let sum = 0;
