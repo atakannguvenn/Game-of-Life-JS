@@ -66,15 +66,10 @@ function draw() {
     }
   }
   grid = next;
-  sleep(500);
 
 
 };
 
-function sleep(delay) {
-  var start = new Date().getTime();
-  while (new Date().getTime() < start + delay);
-}
 
 function countNeighbors(grid, x, y) {
   let sum = 0;
